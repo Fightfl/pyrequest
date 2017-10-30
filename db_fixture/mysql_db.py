@@ -35,10 +35,9 @@ class DB:
 
     #清楚表数据
     def clear(self, table_name):
-    #real_sql = "truncate table" + table_name + ";"
-        real_sql = "delete from" + table_name + ";"
+        real_sql = "delete from"+table_name + ";"
         with self.conn.cursor() as cursor:
-            cursor.execute("SET FOREIGN_KEY_CHECKS=0;")
+            cursor.execute("SET FOREIGN_KEY_CHECKS=0")
             cursor.execute(real_sql)
         self.conn.commit()
 
