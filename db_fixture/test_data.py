@@ -6,8 +6,6 @@ try:
 except ImportError:
     from .mysql_db import DB
 
-
-
 # create data
 datas = {
     'sign_event':[
@@ -24,11 +22,9 @@ datas = {
     ],
 }
 
-
 # Inster table datas
 def init_data():
     DB().init_data(datas)
-
 
 if __name__ == '__main__':
     init_data()
