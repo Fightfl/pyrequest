@@ -1,5 +1,5 @@
 __author__ = 'lihao'
-# coding=utf8
+# -*- coding: utf-8 -*-
 from pymysql import connect, cursors
 from pymysql.err import OperationalError
 import os

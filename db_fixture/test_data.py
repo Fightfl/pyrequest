@@ -1,4 +1,5 @@
 __author__ = 'lihao'
+# -*- coding: utf-8 -*-
 import sys
 sys.path.append('../db_fixture')
 try:
@@ -9,11 +10,11 @@ except ImportError:
 # create data
 datas = {
     'sign_event':[
-        {'id':1,'name':'ºìÃ×Pro·¢²¼»á','`limit`':2000,'status':1,'address':'±±¾©»áÕ¹ÖĞĞÄ','start_time':'2017-08-20 14:00:00'},
-        {'id':2,'name':'¿É²Î¼ÓÈËÊıÎª0','`limit`':0,'status':1,'address':'±±¾©»áÕ¹ÖĞĞÄ','start_time':'2017-08-20 14:00:00'},
-        {'id':3,'name':'µ±Ç°×´Ì¬Îª0¹Ø±Õ','`limit`':2000,'status':0,'address':'±±¾©»áÕ¹ÖĞĞÄ','start_time':'2017-08-20 14:00:00'},
-        {'id':4,'name':'·¢²¼»áÒÑ½áÊø','`limit`':2000,'status':1,'address':'±±¾©»áÕ¹ÖĞĞÄ','start_time':'2001-08-20 14:00:00'},
-        {'id':5,'name':'Ğ¡Ã×5·¢²¼»á','`limit`':2000,'status':1,'address':'±±¾©¹ú¼Ò»áÒéÖĞĞÄ','start_time':'2017-08-20 14:00:00'},
+        {'id':1,'name':'çº¢ç±³Proå‘å¸ƒä¼š','`limit`':2000,'status':1,'address':'åŒ—äº¬ä¼šå±•ä¸­å¿ƒ','start_time':'2017-08-20 14:00:00'},
+        {'id':2,'name':'å¯å‚åŠ äººæ•°ä¸º0','`limit`':0,'status':1,'address':'åŒ—äº¬ä¼šå±•ä¸­å¿ƒ','start_time':'2017-08-20 14:00:00'},
+        {'id':3,'name':'å½“å‰çŠ¶æ€ä¸º0å…³é—­','`limit`':2000,'status':0,'address':'åŒ—äº¬ä¼šå±•ä¸­å¿ƒ','start_time':'2017-08-20 14:00:00'},
+        {'id':4,'name':'å‘å¸ƒä¼šå·²ç»“æŸ','`limit`':2000,'status':1,'address':'åŒ—äº¬ä¼šå±•ä¸­å¿ƒ','start_time':'2001-08-20 14:00:00'},
+        {'id':5,'name':'å°ç±³5å‘å¸ƒä¼š','`limit`':2000,'status':1,'address':'åŒ—äº¬å›½å®¶ä¼šè®®ä¸­å¿ƒ','start_time':'2017-08-20 14:00:00'},
     ],
     'sign_guest':[
         {'id':1,'realname':'alen','phone':13511001100,'email':'alen@mail.com','sign':0,'event_id':1},
