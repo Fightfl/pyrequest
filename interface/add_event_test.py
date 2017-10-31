@@ -12,7 +12,7 @@ class AddEventTest(unittest.TestCase):
     ''' 添加发布会 '''
 
     def setUp(self):
-        self.base_url = "http://127.0.0.1:8000/api/add_event/"
+        self.base_url = "http://127.0.0.1:8001/api/add_event/"
 
     def tearDown(self):
         print(self.result)
