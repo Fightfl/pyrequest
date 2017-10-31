@@ -35,9 +35,9 @@ class DB:
 
     #清楚表数据
     def clear(self, table_name):
-        real_sql = "delete from"+table_name + ";"
+        real_sql = "delete from " + table_name + ";"
         with self.conn.cursor() as cursor:
-            cursor.execute("SET FOREIGN_KEY_CHECKS=0")
+            cursor.execute("SET FOREIGN_KEY_CHECKS=0;")
             cursor.execute(real_sql)
         self.conn.commit()
 
@@ -47,8 +47,7 @@ class DB:
             table_data[key] = "'" + str(table_data[key])+ "'"
         key = ','.join(table_data.keys())
         value = ','.join(table_data.values())
-        real_sql = "INSERT INTO" + table_name + "("+key+") VALUES (" + value + ")"
-        #print(real_sql)
+        real_sql = "INSERT INTO " + table_name + "("+key+") VALUES (" + value + ")"
 
         with self.conn.cursor() as cursor:
             cursor.execute(real_sql)
